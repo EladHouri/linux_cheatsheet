@@ -4,6 +4,7 @@ file =
 
 
 wget - downloada file 
+
 explorer.exe - open a file via wsl on windows
 
 echo "x" | xxd -p -r - hex to ascii
