@@ -20,3 +20,5 @@ git branch - see branches
 git checkout <ver> change version
 
 ssh -p 55055 hey@x
+
+checksec --file="file name" - security properties for ELF
