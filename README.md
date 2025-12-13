@@ -24,4 +24,10 @@ ssh -p 55055 hey@x
 checksec --file="file name" - security properties for ELF
 
 
+Steganography:
+zsteg - no password (for prng)
+steghide embed -cf cover.jpg -ef secret.txt -p mypassword
+steghide extract -sf cover.jpg -p mypasswor
+
+
 nano - edit ascii file
