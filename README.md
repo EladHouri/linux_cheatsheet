@@ -8,6 +8,9 @@ wget - downloada file
 explorer.exe - open a file via wsl on windows
 
 echo "x" | xxd -p -r - hex to ascii
+xxd filemme - hex+ ascii 
+xxd filename | head/tail
+
 
 echo "6wDoT88=" | base64 -d - base64 to ascii
 
@@ -24,6 +27,10 @@ ssh -p 55055 hey@x
 checksec --file="file name" - security properties for ELF
 
 
+pngcheck - check png Length field+Chunk type+Chunk data+ CRC
+
+ binwalk filename - check for polylog
+
 Steganography:
 zsteg - no password (for prng)
 steghide embed -cf cover.jpg -ef secret.txt -p mypassword
@@ -31,3 +38,7 @@ steghide extract -sf cover.jpg -p mypasswor
 
 
 nano - edit ascii file
+
+hexedit file - edit hex file
+
+tar -xf 1000.tar
