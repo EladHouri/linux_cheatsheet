@@ -4,6 +4,7 @@ file =
 
 
 wget - downloada file 
+wget -r -np -k http://target-site/ - downold web pages recursive, html+css+js+obj
 
 explorer.exe - open a file via wsl on windows
 
