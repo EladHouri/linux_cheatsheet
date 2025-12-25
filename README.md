@@ -38,6 +38,16 @@ steghide embed -cf cover.jpg -ef secret.txt -p mypassword
 steghide extract -sf cover.jpg -p mypasswor
 
 
+filesystems: 
+
+fls -i raw -f ext3 -rp file
+icat -i raw -f ext3 suspicious.dd.sda1 12
+ istat -i raw -f ext3 suspicious.dd.sda1 12
+
+
+
+
+
 nano - edit ascii file
 
 hexedit file - edit hex file
