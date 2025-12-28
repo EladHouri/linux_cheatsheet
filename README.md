@@ -32,21 +32,42 @@ pngcheck - check png Length field+Chunk type+Chunk data+ CRC
 
  binwalk filename - check for polylog
 
+ 
+------------------------
 Steganography:
-zsteg - no password (for prng)
+
+zsteg -a  - no password (for prng)
+
 steghide embed -cf cover.jpg -ef secret.txt -p mypassword
+
 steghide extract -sf cover.jpg -p mypasswor
 
+-------------------------
 
+---------------------------------------
 filesystems: 
 
 fls -i raw -f ext3 -rp file
 icat -i raw -f ext3 suspicious.dd.sda1 12
  istat -i raw -f ext3 suspicious.dd.sda1 12
 
+-------------------------------------------
 
 
+--------------------------------------
+full dist(boot, sections): 
 
+
+fdisk -l disk.img - see general information
+ 
+ 
+ sudo losetup -fP disk.img -> lsblk - make it readble
+ sudo mount /dev/partitionNAME dir - take the filesystem and attach it to the directory
+
+ 
+
+
+--------------------------------------
 
 nano - edit ascii file
 
