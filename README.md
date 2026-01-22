@@ -45,12 +45,27 @@ steghide extract -sf cover.jpg -p mypasswor
 -------------------------
 
 ---------------------------------------
-filesystems: 
+raw disk/ fs- The Sleuth Kit: 
+
+mmls disk.img - show partition and general layout
+
+
+fsstat - filesystem metadata
+
+
+fls - show files
+
 
 fls -i raw -f ext3 -rp file
+
+
 icat -i raw -f ext3 suspicious.dd.sda1 12
+
+ 
  istat -i raw -f ext3 suspicious.dd.sda1 12
 
+
+srch_strings
 -------------------------------------------
 
 
