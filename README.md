@@ -66,6 +66,7 @@ icat -i raw -f ext3 suspicious.dd.sda1 12
 
 
 srch_strings
+
 -------------------------------------------
 
 
