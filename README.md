@@ -56,6 +56,12 @@ fsstat - filesystem metadata
 fls - show files
 
 
+dd if=disk.img of=partition.img bs=512 skip=2048 count=2097152 - move a partition outside the disc
+
+
+
+
+
 fls -i raw -f ext3 -rp file
 
 
